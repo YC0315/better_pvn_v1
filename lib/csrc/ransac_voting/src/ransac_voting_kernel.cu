@@ -48,7 +48,7 @@ void generate_hypothesis_kernel(
     double result = atan(param)*180/PI;
     //float l = sqrt((cx0-cx1)*(cx0-cx1)+(cy0-cy1)*(cy0-cy1));
 
-    // 角度阈值
+
     float a = 9;
     if (fabs(result < a)) return;
     //printf("角度为: %f", result);
