@@ -1,12 +1,12 @@
 
 ## Introduction
-This code is a pose estimation method based on pixel-wise voting strategy. Our proposed method is improved based on PVNet. So we provide PVNet here for reference(https://github.com/zju3dv/clean-pvnet), and thanks again to Peng et al. for their excellent work.
+We reiterate that our work is based on pvnet. we provide pvnet here for reference(https://github.com/zju3dv/clean-pvnet), and thanks again to Peng et al. for their excellent work.
 
 We made the following change：  
-- [x]  A DDL loss for learning unit vector-field is proposed for PVNet weak constraints
+- [x]  After the network generates the vector field, when calculating candidate key points based on the vectors on the same object, we first align and filter to prevent the deviation from being too small, resulting in the generation of hypotheses with too large deviation. The filtering angle is different for each class on the two datasets, so this threshold needs to be set according to the class.
 
 
-## Training and Testing
+## Training and Testing Again
 The code for installation, network training, and testing can be found in the PVNet link in the introduction section. The training and testing commands are shown below:<br>
 
 ### Take the benchvise as an example
