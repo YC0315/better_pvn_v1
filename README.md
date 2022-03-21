@@ -27,7 +27,7 @@ The code for installation, network training, and testing can be found in the PVN
     
    
 ## Schematic
-![PVNet](https://github.com/YC0315/better_pvn/blob/f68a678f910756b554502a29853bd0ea20306c0b/views/PVNet.png)![PVNet_imp](https://github.com/YC0315/better_pvn/blob/f68a678f910756b554502a29853bd0ea20306c0b/views/PVNet_imp.png) 
+![Schematic](https://github.com/YC0315/better_pvn_v1/blob/da189cb63a27f56a43a107d27fb6e42b4206bb18/design%20sketch/Schematic.png)
 
 
 
