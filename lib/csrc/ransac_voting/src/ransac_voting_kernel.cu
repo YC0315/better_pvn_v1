@@ -42,21 +42,6 @@ void generate_hypothesis_kernel(
     if(fabs(nx1*ny0-nx0*ny1)<1e-6) return;
     if(fabs(ny1*nx0-ny0*nx1)<1e-6) return;
 
-    float k1 = -(nx0/(ny0+1e-8));
-    float k2 = -(nx1/(ny1+1e-8));
-    double param = fabs(k1-k2)/(1+k1*k2);
-    double result = atan(param)*180/PI;
-    //float l = sqrt((cx0-cx1)*(cx0-cx1)+(cy0-cy1)*(cy0-cy1));
-
-
-    float a = 9;
-    if (fabs(result < a)) return;
-    //printf("角度为: %f", result);
-    //float l = sqrt((cx0-cx1)*(cx0-cx1)+(cy0-cy1)*(cy0-cy1));
-    //printf("两个像素点之间的距离为：%f\n", l);
-
-
-
     float y=(nx1*(nx0*cx0+ny0*cy0)-nx0*(nx1*cx1+ny1*cy1))/(nx1*ny0-nx0*ny1);
     float x=(ny1*(nx0*cx0+ny0*cy0)-ny0*(nx1*cx1+ny1*cy1))/(ny1*nx0-ny0*nx1);
 
