@@ -3,7 +3,7 @@
 We reiterate that our work is based on pvnet. we provide pvnet here for reference(https://github.com/zju3dv/clean-pvnet), and thanks again to Peng et al. for their excellent work.
 
 We made the following change：  
-- [x]  After the network generates the vector field, when calculating candidate key points based on the vectors on the same object, we first align and filter to prevent the deviation from being too small, resulting in the generation of hypotheses with too large deviation. The filtering angle is different for each class on the two datasets, so this threshold needs to be set according to the class.
+- [x]  After the network generates the vector field to processing.
 
 
 ## Training and Testing Again
